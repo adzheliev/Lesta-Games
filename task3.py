@@ -1,12 +1,7 @@
 """
-В данном модуле приводятся функции сортировки массива чисел.
+В данном модуле приводится функция сортировки массива чисел.
 """
 import random
-
-
-def standard_sort(arr: list[int]) -> list[int]:
-    """Стандартная функция сортировки"""
-    return sorted(arr)
 
 
 def qsort(arr: list[int]) -> list[int]:
@@ -19,5 +14,4 @@ def qsort(arr: list[int]) -> list[int]:
     return qsort(lo) + [pivot] + qsort(hi)
 
 
-print(standard_sort([random.randint(1, 100) for _ in range(10)]))
 print(qsort([random.randint(1, 100) for _ in range(10)]))
